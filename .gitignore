@@ -1,0 +1,28 @@
+### Node.js ###
+node_modules/
+npm-debug.log
+yarn-error.log
+
+### Next.js Build Files ###
+.next/
+out/
+
+### TypeScript ###
+*.tsbuildinfo
+
+### Logs ###
+logs/
+*.log
+
+### Environment Variables ###
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+### Editor & System Files ###
+.DS_Store
+.vscode/
+.idea/
+Thumbs.db
