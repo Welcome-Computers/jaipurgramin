@@ -1,0 +1,447 @@
+.dashboard-layout {
+  display: flex;
+}
+
+.dashboard-sidebar {
+  width: 200px;
+  // background-color: #f4f4f4;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 20px;
+}
+
+// header.scss
+
+.jg-header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  &__middle {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  &__left {
+    flex-grow: 1;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+  }
+
+  &__form-inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__search-btn {
+    margin-right: 10px;
+  }
+
+  &__input {
+    width: 200px;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__group-two {
+    display: flex;
+    align-items: center;
+  }
+
+  &__dark-light {
+    margin-right: 15px;
+  }
+
+  &__zoom {
+    margin-right: 15px;
+  }
+
+  &__dropmenu {
+    position: relative;
+    margin-right: 15px;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+  }
+
+  &__author-img {
+    margin-right: 10px;
+  }
+
+  &__author-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__author-title {
+    font-weight: bold;
+  }
+
+  &__author-text {
+    color: gray;
+  }
+
+  &__author-dropdown {
+    margin-left: 10px;
+  }
+}
+
+.jg-dropdown-card {
+  // background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 250px;
+}
+
+.jg-dropdown-card__title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.jg-dropdown-card__button {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.jg-dropdown-card__sell-all {
+  color: #1890ff;
+}
+
+.jg-chatbox__inner {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.jg-chatbox__author-img {
+  margin-right: 10px;
+}
+
+.jg-chatbox__author-content {
+  flex-grow: 1;
+}
+
+.jg-chatbox__author-title {
+  font-weight: bold;
+}
+
+.jg-chatbox__author-desc {
+  color: gray;
+}
+
+.jg-header__message--animate {
+  // background-color: red;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.jg-dropdown__button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+
+  .anticon {
+    font-size: 24px;
+  }
+}
+
+.jg-dropdown-menu__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid #f0f0f0;
+
+  .jg-dropdown-menu__content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .jg-dropdown-menu__author {
+      display: flex;
+      align-items: center;
+
+      .jg-dropdown-menu__author-avatar {
+        margin-right: 10px;
+      }
+
+      .jg-dropdown-menu__author-content {
+        .jg-dropdown-menu__author-title {
+          font-weight: bold;
+          margin-bottom: 4px;
+        }
+
+        .jg-dropdown-menu__author-desc {
+          color: #555;
+        }
+      }
+    }
+
+    .jg-dropdown-menu__badge {
+      margin-left: auto;
+      // background-color: #1890ff;
+    }
+  }
+}
+
+.jg-color1__bg {
+  // background-color: #ff4d4f;
+}
+
+.jg-dashboard-header {
+  display: flex;
+  .jg-header {
+    flex: 1 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.jg-user-dropdown {
+  &__button {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    .ant-avatar {
+    }
+  }
+
+  &__menu {
+    .jg-user-dropdown__menu-item {
+      display: flex;
+      align-items: center;
+      padding: 8px 16px;
+
+      &:hover {
+      }
+
+      .anticon {
+        margin-right: 8px;
+      }
+
+      .jg-user-dropdown__link {
+        text-decoration: none;
+
+        &:hover {
+        }
+      }
+    }
+  }
+
+  &__avatar {
+    cursor: pointer;
+  }
+}
+
+/* Sample CSS for Ant Design Components */
+.jg-progress-card {
+  // background-color: #f9f9f9;
+}
+
+.jg-progress-card__icon {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.jg-progress-card__title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.jg-progress-card__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.jg-progress-card__see-all {
+  padding: 0;
+  font-size: 14px;
+  text-decoration: none;
+  color: #09ad95;
+}
+
+.jg-progress-card__text {
+  color: #09ad95;
+  font-size: 16px;
+}
+
+.jg-recent-orders {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px;
+  }
+
+  &__title {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &__table-container {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+.jg-card {
+  &__body {
+    padding: 16px;
+  }
+}
+
+.jg-table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+
+  &__thead {
+    text-align: left;
+    // background-color: #f5f5f5;
+
+    th {
+      padding: 12px 16px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #000;
+    }
+  }
+
+  &__tbody {
+    tr {
+      &.jg-table__row {
+        &:hover {
+          // background-color: #fafafa;
+        }
+      }
+
+      td {
+        padding: 12px 16px;
+        font-size: 14px;
+
+        &.jg-table__selection-column {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  &__selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .jg-checkbox-wrapper {
+      .jg-checkbox {
+        &__input {
+          display: none;
+        }
+
+        &__inner {
+          width: 16px;
+          height: 16px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+
+        &__input:checked + &__inner {
+          // background-color: #1890ff;
+          border-color: #1890ff;
+        }
+      }
+    }
+  }
+}
+
+.jg-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 8px;
+}
+
+.jg-customer-info {
+  display: flex;
+  align-items: center;
+
+  &__name {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.jg-space {
+  display: flex;
+  align-items: center;
+
+  &--horizontal {
+    flex-direction: row;
+  }
+
+  &--gap-small {
+    gap: 8px;
+  }
+
+  &--align-center {
+    align-items: center;
+  }
+}
+
+.jg-sort-by {
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+}
+
+.jg-tag {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+
+  &--warning {
+    // background-color: #fffbe6;
+    color: #d48806;
+  }
+}
+.jg-recent-orders {
+  &__table-container {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+  }
+}
+
+.pageHeader-box{ height: auto; padding:20px}
+.pageHeader-box{ height: auto; padding:20px}

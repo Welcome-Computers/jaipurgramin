@@ -1,0 +1,7 @@
+// @import "./main.scss";
+// @import "./dashboard.scss";
+// @import "./auth.scss";
+
+@use "./main" as *;
+@use "./dashboard" as *;
+@use "./auth" as *;
