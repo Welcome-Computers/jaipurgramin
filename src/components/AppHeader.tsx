@@ -23,6 +23,9 @@ const AppHeader: React.FC = () => {
                 <Button type="text" className="jg-darklight-toggle">
                   <i className="lnr lnr-moon"></i> {/* Linearicon Bulb */}
                 </Button>
+                <Button type="text" className="jg-darklight-toggle">
+                  <i className="lnr lnr-moon"></i> {/* Linearicon Bulb */}
+                </Button>
 
                 {/* Fullscreen Button */}
                 <Button id="jg-header__full" type="text">
