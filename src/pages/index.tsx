@@ -1,7 +1,8 @@
 
 import React from "react";
 import Head from "next/head";
-import Signin from "./signin";
+import HomePage from "@components/template/HomePage";
+
 
 export default function Home() {
   console.log("home")

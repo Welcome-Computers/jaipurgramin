@@ -1,28 +1,44 @@
-### Node.js ###
-node_modules/
-npm-debug.log
-yarn-error.log
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-### Next.js Build Files ###
-.next/
-out/
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+package-lock.json
+yarn.lock
+pnpm-lock.*
 
-### TypeScript ###
-*.tsbuildinfo
+# testing
+/coverage
 
-### Logs ###
-logs/
-*.log
+# next.js
+/.next/
+/out/
 
-### Environment Variables ###
-.env
-.env.local
-.env.development
-.env.production
-.env.test
+# production
+/build
+/_next
 
-### Editor & System Files ###
+# misc
 .DS_Store
-.vscode/
-.idea/
-Thumbs.db
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+# .env
+# .env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# husky lint configute file
+lint-stage.config.js

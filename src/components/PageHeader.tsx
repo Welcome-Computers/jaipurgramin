@@ -1,14 +1,14 @@
 import React from "react";
 import { Row, Col, Breadcrumb, Button } from "antd";
-import { HomeOutlined, UserAddOutlined } from "@ant-design/icons";
+import Link from "next/link";
 
 const PageHeader: React.FC = () => {
   const breadcrumbItems = [
     {
       title: (
-        <a href="#">
-          <HomeOutlined /> Home
-        </a>
+        <Link href="#">
+          <i className="lnr lnr-home"></i> Home
+        </Link>
       ),
     },
     {
@@ -36,10 +36,9 @@ const PageHeader: React.FC = () => {
         {/* Add News Button */}
         <Button
           type="primary"
-          icon={<UserAddOutlined />}
           className="jg-sherah-btn jg-sherah-gbcolor"
         >
-          Add News
+          <i className="lnr lnr-user"></i> Add News
         </Button>
       </Col>
     </Row>
