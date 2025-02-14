@@ -1,17 +1,19 @@
 import { Button, Divider, Dropdown, Image, Input, MenuProps, Modal, Space, theme } from 'antd';
-import { Header } from 'antd/es/layout/layout';
-import Link from 'antd/es/typography/Link';
-import Title from 'antd/es/typography/Title';
-import React, { useState } from 'react';
+import { Typography } from 'antd';
 
+import Link from 'next/link';
+import React, { useState } from 'react';
+import { Layout } from 'antd';
+const { Header } = Layout;
+const { Title } = Typography;
 const { useToken } = theme;
 
 const MainHeader = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false); // Start with modal closed
   const items: MenuProps['items'] = [
     {
       key: '1',
-      label: <p>Get into your account.</p>,
+      label: <span>Get into your account.</span>, // Modify with semantic content
     },
   ];
 
@@ -26,12 +28,13 @@ const MainHeader = () => {
   const menuStyle: React.CSSProperties = {
     boxShadow: 'none',
   };
+
   return (
     <>
       <Header className="news_week_header">
         {/* Left Side - Menu and Search */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-          <Button type="text" iconPosition="end" icon={<span />} className="menu" onClick={() => setOpen(true)}>
+          <Button type="text" icon={<span />} className="menu" onClick={() => setOpen(true)}>
             MENU
           </Button>
           <Input placeholder="Search" prefix={<span />} style={{ width: 200 }} />
@@ -48,26 +51,23 @@ const MainHeader = () => {
             menu={{ items }}
             dropdownRender={(menu) => (
               <div style={contentStyle}>
-                {React.cloneElement(
-                  menu as React.ReactElement<{
-                    style: React.CSSProperties;
-                  }>,
-                  { style: menuStyle }
-                )}
+                {React.cloneElement(menu as React.ReactElement<{ style: React.CSSProperties }>, { style: menuStyle })}
                 <Divider style={{ margin: 0 }} />
                 <Space style={{ padding: 8 }}>
-                  <Button color="danger" variant="solid">
+                  <Button type="primary" danger>
                     Login
                   </Button>
                 </Space>
               </div>
             )}
           >
-            <Link onClick={(e) => e.preventDefault()}>
+            <Link href="/account">
+
               <Space className="profile">
-              <span />
+                <span />
                 My account
               </Space>
+
             </Link>
           </Dropdown>
 
@@ -77,8 +77,7 @@ const MainHeader = () => {
         </div>
       </Header>
 
-      {/* modal box */}
-
+      {/* Modal Box */}
       <Modal open={open} onCancel={() => setOpen(false)} footer={null} centered width={900} className="news_week_header_modal_header">
         <div className="news_week_header_modal">
           {/* Left Side - Image & Subscription */}

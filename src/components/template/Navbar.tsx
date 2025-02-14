@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import { Menu } from 'antd';
-import Title from 'antd/es/typography/Title';
-import Link from 'antd/es/typography/Link';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
+// const { Title } = Typography;
 const Navbar = () => {
   const categories = [
     {
@@ -180,7 +180,7 @@ const Navbar = () => {
         <Menu className="navbar_header" mode="horizontal">
           {categories.map((category) => (
             <Menu.Item className="navbar_item" key={category.name} onMouseEnter={() => setHovered(category.name)} onMouseLeave={() => setHovered(null)}>
-              <Link>{category.name}</Link>
+              <Link href={"#"}>{category.name}</Link>
 
               {hovered === category.name && (
                 <div className="navbar_content">
@@ -190,7 +190,7 @@ const Navbar = () => {
                         <div className="navbar_dropdown_content" key={index}>
                           <img src={item.image} alt={item.title} />
                           <div className="navbar_date">
-                            <Title level={5}>{item.title}</Title>
+                            <h5>{item.title}</h5>
                             <p>{item.date}</p>
                           </div>
                         </div>

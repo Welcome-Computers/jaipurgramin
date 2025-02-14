@@ -1,11 +1,11 @@
 
 import React from "react";
 import Head from "next/head";
-import HomePage from "@components/template/HomePage";
-
+import HomeLayout from "@components/layouts/HomeLayout";
+import MainHeader from "@components/template/MainHeader";
+import Navbar from "@components/template/Navbar";
 
 export default function Home() {
-  console.log("home")
   return (
     <div>
       <Head>
@@ -14,7 +14,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <HomePage />
-    </div>
+      <HomeLayout>
+        <div>
+          <MainHeader />
+          <Navbar />
+        </div>
+      </HomeLayout>
+    </div >
   );
 }

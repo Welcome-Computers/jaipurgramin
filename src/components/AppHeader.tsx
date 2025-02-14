@@ -1,11 +1,11 @@
 import React from "react";
-import { Layout, Input, Button } from "antd";
+import { Input, Button } from "antd";
 
-const { Header } = Layout;
+
 
 const AppHeader: React.FC = () => {
   return (
-    <Header className="jg-header" style={{ padding: 0 }}>
+    <header className="jg-header" style={{ padding: 0 }}>
       <div className="jg-header__inner">
         <div className="jg-header__middle">
           <div className="jg-header__left">
@@ -36,7 +36,7 @@ const AppHeader: React.FC = () => {
           </div>
         </div>
       </div>
-    </Header>
+    </header>
   );
 };
 
