@@ -1,0 +1,47 @@
+.navbar_header {
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  position: relative;
+
+  .navbar_item {
+    font-weight: 600;
+    span {
+      .navbar_content {
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        position: fixed;
+        left: 150px;
+        top: 200px;
+
+        .navbar_content_items {
+          display: flex;
+          gap: 20px;
+          .navbar_dropdown_content {
+            width: 300px;
+            text-align: center;
+
+            img {
+              width: 260px;
+            }
+            div {
+              padding: 0 20px;
+              margin-top: 10px;
+              h5 {
+                white-space: normal !important;
+                font-size: 15px !important;
+                font-weight: 600;
+                margin: 0;
+              }
+
+              p {
+                color: #767676;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

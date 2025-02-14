@@ -1,0 +1,127 @@
+.news_week_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 70px 200px;
+
+  .menu {
+    color: red;
+    font-weight: 700;
+  }
+  .menu:hover {
+    color: #ec3535 !important;
+  }
+
+  .text_header {
+    font-size: 100px;
+    font-weight: bold;
+    font-style: italic;
+    color: red;
+    font-family: Georgia, serif;
+    position: relative;
+
+    .Text_SUb_Header {
+      font-size: 12px;
+      font-weight: normal;
+      font-style: italic;
+      position: absolute;
+      top: 0;
+      right: -10px;
+      color: black;
+    }
+  }
+
+  .header_profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+
+    .profile {
+      color: black;
+      font-weight: 700;
+    }
+
+    .subscribe {
+      background-color: red;
+      color: white;
+      font-weight: 700;
+      border-radius: 5px !important;
+    }
+    .subscribe:hover {
+      background-color: black;
+    }
+  }
+}
+
+.news_week_header_modal_header {
+  .news_week_header_modal {
+    display: flex;
+    align-items: center;
+    width: 900px;
+    height: 400px;
+    .left_bar {
+      background-color: red;
+      width: 350px;
+      height: 100%;
+      padding: 40px;
+
+      .left_bar_image {
+        height: 200px !important;
+        width: 270px;
+      }
+      .ant-image-mask {
+        display: none;
+      }
+
+      .title {
+        text-align: center;
+        color: white;
+        font-weight: 700;
+      }
+      .subscribe_btn {
+        text-align: center;
+        margin-top: 70px;
+
+        button {
+          padding: 20px;
+          color: red;
+          font-weight: 600;
+          background-color: white;
+        }
+        button:hover {
+          color: black;
+        }
+      }
+    }
+
+    .right_Bar {
+      margin-left: 50px;
+
+      h4 {
+        font-size: 30px;
+        font-weight: 700;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          padding: 5px 0;
+
+          a {
+            font-size: 16px;
+            font-weight: 600;
+            color: black;
+          }
+        }
+        li:hover a {
+          color: red;
+        }
+      }
+    }
+  }
+}
