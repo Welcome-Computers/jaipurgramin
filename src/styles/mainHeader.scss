@@ -1,4 +1,4 @@
-.news_week_header {
+.jp-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,114 +14,123 @@
     color: #ec3535 !important;
   }
 
-  .text_header {
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+  }
+
+  &__right__account {
+    color: black;
+    font-weight: 700;
+  }
+
+  &__right__login_cover {
+    padding: 8px !important;
+  }
+
+  &__right__subscribe {
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px !important;
+  }
+  &__right__subscribe:hover {
+    background-color: black !important;
+  }
+
+  &__center {
     font-size: 100px;
     font-weight: bold;
     font-style: italic;
     color: red;
     font-family: Georgia, serif;
     position: relative;
-
-    .Text_SUb_Header {
-      font-size: 12px;
-      font-weight: normal;
-      font-style: italic;
-      position: absolute;
-      top: 0;
-      right: -10px;
-      color: black;
-    }
+  }
+  &__center_subHeader {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: italic;
+    position: absolute;
+    top: -22px;
+    right: -8px;
+    color: black;
+  }
+  &__content__left {
+    display: flex !important;
+    align-items: center !important;
+    gap: 15px !important;
   }
 
-  .header_profile {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    cursor: pointer;
-
-    .profile {
-      color: black;
-      font-weight: 700;
-    }
-
-    .subscribe {
-      background-color: red;
-      color: white;
-      font-weight: 700;
-      border-radius: 5px !important;
-    }
-    .subscribe:hover {
-      background-color: black;
-    }
+  &__content_left_search {
+    width: 200px;
   }
 }
 
-.news_week_header_modal_header {
-  .news_week_header_modal {
+.jp-header-modal {
+  &__header {
     display: flex;
     align-items: center;
     width: 900px;
     height: 400px;
-    .left_bar {
-      background-color: red;
-      width: 350px;
-      height: 100%;
-      padding: 40px;
+  }
 
-      .left_bar_image {
-        height: 200px !important;
-        width: 270px;
-      }
-      .ant-image-mask {
-        display: none;
-      }
+  &__right__title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  &__right {
+    margin-left: 50px;
+  }
+  &__right__list__cover {
+    list-style: none;
+    padding: 0;
+  }
+  &__right__list {
+    padding: 5px 0;
+  }
+  &__right__link {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+  }
+  &__right__list:hover a {
+    color: red;
+  }
 
-      .title {
-        text-align: center;
-        color: white;
-        font-weight: 700;
-      }
-      .subscribe_btn {
-        text-align: center;
-        margin-top: 70px;
+  &__left {
+    background-color: red;
+    width: 350px;
+    height: 100%;
+    padding: 40px;
 
-        button {
-          padding: 20px;
-          color: red;
-          font-weight: 600;
-          background-color: white;
-        }
-        button:hover {
-          color: black;
-        }
-      }
+    .ant-image-mask {
+      display: none;
     }
+  }
+  &__subscribe__btn__cover {
+    text-align: center;
+    margin-top: 70px;
+  }
+  &__subscribe__btn {
+    padding: 20px;
+    color: red;
+    font-weight: 600;
+    background-color: white;
+  }
+  &__subscribe__btn:hover {
+    color: black;
+  }
 
-    .right_Bar {
-      margin-left: 50px;
+  &__left__image {
+    height: 200px !important;
+    width: 270px;
+  }
 
-      h4 {
-        font-size: 30px;
-        font-weight: 700;
-      }
-
-      ul {
-        list-style: none;
-        padding: 0;
-
-        li {
-          padding: 5px 0;
-
-          a {
-            font-size: 16px;
-            font-weight: 600;
-            color: black;
-          }
-        }
-        li:hover a {
-          color: red;
-        }
-      }
-    }
+  &__left__title {
+    text-align: center;
+    color: white;
+    font-weight: 700;
   }
 }

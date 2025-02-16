@@ -1,11 +1,9 @@
-import React, { memo } from "react";
-import { Provider } from "react-redux";
-import type { AppProps } from "next/app";
-import store from "@redux/store";
-import MainComponent from "@components/layouts/MainComponent";
-import "@styles/globals.scss";
-
-
+import React, { memo } from 'react';
+import { Provider } from 'react-redux';
+import type { AppProps } from 'next/app';
+import store from '@redux/store';
+import MainComponent from '@components/layouts/MainComponent';
+import '@styles/globals.scss';
 
 // Main App component welcome
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {

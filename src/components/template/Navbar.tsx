@@ -177,21 +177,21 @@ const Navbar = () => {
   return (
     <>
       <div>
-        <Menu className="navbar_header" mode="horizontal">
+        <Menu className="jp-navbar-header" mode="horizontal">
           {categories.map((category) => (
-            <Menu.Item className="navbar_item" key={category.name} onMouseEnter={() => setHovered(category.name)} onMouseLeave={() => setHovered(null)}>
-              <Link href={"#"}>{category.name}</Link>
+            <Menu.Item className="jp-navbar-header__item" key={category.name} onMouseEnter={() => setHovered(category.name)} onMouseLeave={() => setHovered(null)}>
+              <Link href={'#'}>{category.name}</Link>
 
               {hovered === category.name && (
-                <div className="navbar_content">
-                  <div className="navbar_content_items">
+                <div className="jp-navbar-header__content">
+                  <div className="jp-navbar-header__content--item">
                     {category.images?.map((item, index) => {
                       return (
-                        <div className="navbar_dropdown_content" key={index}>
-                          <img src={item.image} alt={item.title} />
-                          <div className="navbar_date">
-                            <h5>{item.title}</h5>
-                            <p>{item.date}</p>
+                        <div className="jp-navbar-header__content--dropdown" key={index}>
+                          <img className="jp-navbar-header__image" src={item.image} alt={item.title} />
+                          <div className="jp-navbar-header__title__cover">
+                            <h5 className="jp-navbar-header__title ">{item.title}</h5>
+                            <p className="jp-navbar-header__para">{item.date}</p>
                           </div>
                         </div>
                       );
